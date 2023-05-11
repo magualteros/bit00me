@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Marlon Gualteros</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#hobbies">Mis Hobbies</a></li>
-                <li><a href="#intereses">Mis Intereses</a></li>
-                <li><a href="#gustos">Mis Gustos</a></li>
+                <li class="menu-item"><a href="#hobbies">Mis Hobbies</a></li >
+                <li class="menu-item"><a href="#intereses">Mis Intereses</a></li>
+                <li class="menu-item"><a href="#gustos">Mis Gustos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="personalImage">
             <figure>
-                <img src="./me.jpeg" alt="Marlon Gualteros" style=" height: 50vh;">
+                <img src="./images/me.jpeg" alt="Marlon Gualteros">
                 <figcaption>Marlon Gualteros</figcaption>
             </figure>
         </section>
@@ -33,7 +34,7 @@
             </ul>
         </section>
         <section id="intereses">
-            <h2>Mis intereses</h2>
+            <h2>Mis Intereses</h2>
             <ol>
                 <li>Aprobar el bootcamp</li>
                 <li>Realizar un proyecto de desarrollo con unos amigos</li>
@@ -41,13 +42,42 @@
             </ol>
         </section>
         <section id="gustos">
-            <h2>Mis gustos</h2>
+            <h2>Mis Gustos</h2>
             <dl>
                 <dt>Desarrollo front end
                 <dd>El Front end es la parte de una web que conecta e interactúa con los usuarios que la visitan</dd></dt>
                 <dt>Diseño UX
                 <dd>Se habla de diseño UX con el propósito de definir el diseño de la experiencia de usuario. Por design se hace referencia sobre todo a la «concepción» de la experiencia de usuario más que a la creación visual.</dd></dt>
             </dl>
+        </section>
+        <section id="formulario">
+            <br action="">
+                <fieldset>
+                    <legend>Dejanos contactarte</legend>
+                    <label>Nombre:
+                        <input type="text"/>
+                    </label><br>
+                    <label >Correo:
+                        <input type="email">
+                    </label><br>
+                    <label>Contraseña:
+                        <input type="password"/>
+                    </label><br>
+                    <label>Estado civil:
+                        Soltero<input type="radio" name="estadoCv"/>
+                        Casado<input type="radio" name="estadoCv"/>
+                        Union libre<input type="radio" name="estadoCv"/>
+                    </label><br>
+                    <label>Fecha:
+                        <input type="date"/>
+                    </label><br>
+                    <label>Dejanos un mensaje:
+                        <textarea>
+
+                        </textarea>
+                    </label><br>
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
