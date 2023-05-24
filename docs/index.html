@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Marlon Gualteros</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="#hailidades">Mis Habilidades</a></li >
                 <li class="menu-item"><a href="#hobbies">Mis Hobbies</a></li >
                 <li class="menu-item"><a href="#intereses">Mis Intereses</a></li>
                 <li class="menu-item"><a href="#gustos">Mis Gustos</a></li>
@@ -21,10 +23,26 @@
         <section id="personalImage">
             <figure>
                 <img src="./images/me.jpeg" alt="Marlon Gualteros">
-                <figcaption>Marlon Gualteros</figcaption>
+                <figcaption>Desarrollador front-end</figcaption>
             </figure>
         </section>
-        
+        <section  id="habbilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>
+                    <h6>Html 5</h6>
+                    <p>Tengo habilidades solidas en el lenguaje de marcado, manejo de etiquetas, estructura de documentos html </p>
+                </li>
+                <li>
+                    <h6>Css 3</h6>
+                    <p>Utilizar estilos es lo que le da vida a los sitiosweb y una de las formas de hacerlo es mediante CSS acá destaco el manejo de responsive desing con enfoque movil first, así como, animaciones y manejo de media querys</p>
+                </li>
+                <li>
+                    <h6>JavaScript</h6>
+                    <p>El lenguaje diseñado para la web mediante este puedo manejar el DOM, detectar eventos, recuperar información mediante estructuras de datos y hacer peticiones a Apis </p>
+                </li>
+            </ul>
+        </section>
         <section id="hobbies">
             <h2 >Mis Hobbies</h2>
             <ul>
@@ -49,35 +67,6 @@
                 <dt>Diseño UX
                 <dd>Se habla de diseño UX con el propósito de definir el diseño de la experiencia de usuario. Por design se hace referencia sobre todo a la «concepción» de la experiencia de usuario más que a la creación visual.</dd></dt>
             </dl>
-        </section>
-        <section id="formulario">
-            <br action="">
-                <fieldset>
-                    <legend>Dejanos contactarte</legend>
-                    <label>Nombre:
-                        <input type="text"/>
-                    </label><br>
-                    <label >Correo:
-                        <input type="email">
-                    </label><br>
-                    <label>Contraseña:
-                        <input type="password"/>
-                    </label><br>
-                    <label>Estado civil:
-                        Soltero<input type="radio" name="estadoCv"/>
-                        Casado<input type="radio" name="estadoCv"/>
-                        Union libre<input type="radio" name="estadoCv"/>
-                    </label><br>
-                    <label>Fecha:
-                        <input type="date"/>
-                    </label><br>
-                    <label>Dejanos un mensaje:
-                        <textarea>
-
-                        </textarea>
-                    </label><br>
-                </fieldset>
-            </form>
         </section>
     </main>
 </body>

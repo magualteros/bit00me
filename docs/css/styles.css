@@ -1,55 +1,80 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* Color Theme Swatches in Hex */
+    --color-gris: #3F3D40; 
+    --color-principal: #D9BC66; 
+    --color-secundario: #A68A56; 
+    --color-complemento: #BF9460; 
+    --color-base: #0D0D0D;
+    --color-blanco:#fff; 
 }
 
 body{
-    background-color: #3a3c3d;
+    background-color:var(--color-base);
 }
 
 /*Estilos del Header*/
 
 header{
-    background-color: #345278;
-    padding:16px;
+    background-color: var(--color-secundario);
+    width: 100vw;
 }
 
 header ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .menu-item{
     list-style: none;
+    margin: 8px;
 }
 a{
-    color: #fff;
+    color: var(--color-gris);
+    font-size: small;
+    font-weight: bold;
     text-decoration: none;
 }
 
 /*Estilos de las secciones*/
 
 h2{
-    font-family:Verdana;
     margin-bottom: 8px;
-    color:#120063;
+    color:var(--color-principal);
 }
 section{
-    border: 1px solid #036e60;
-    margin: 12px;
-    background-color: #99c7f5;
+    border: 1px solid var(--color-gris);
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--color-secundario);
     padding: 6px;
 }
 
 #personalImage{
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-blanco);
+    border: none;
+    text-align: center;
 }
-
+#habilidades{
+   
+}
 #personalImage figure img{
     width: 200px;
-    height: auto;
-    border-radius: 10px;
+    height: 200px;
+    border-radius: 100px;
 }
 
 ul,ol,dl{
@@ -60,18 +85,20 @@ li{
     color: #4b0707;
 }
 
-#formulario{
-    display: flex;
-}
-label{
-    border-bottom: 1px solid #000;
-    padding: 6px;
-    margin-top: 8px;
-}
-input{
-    border-radius: 5px;
-    border: none;
-    height: 20px;
-    margin: 4px;
-    outline: none;
+@media screen and (min-width:767px) {
+    header{
+        background-color: var(--color-secundario);
+        width: 90%;
+        margin: auto;
+    }
+    .menu-item{
+        list-style: none;
+        margin: 8px;
+    }
+    a{
+        color: var(--color-gris);
+        font-size: medium;
+        font-weight: bold;
+        text-decoration: none;
+    }
 }
