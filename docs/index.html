@@ -12,7 +12,7 @@
     <header>
         <nav class="nav">
             <ul class="menu">
-                <li class="menu-item"><a href="#hailidades">Mis Habilidades</a></li >
+                <li class="menu-item"><a href="#h-cards">Mis Habilidades</a></li >
                 <li class="menu-item"><a href="#hobbies">Mis Hobbies</a></li >
                 <li class="menu-item"><a href="#intereses">Mis Intereses</a></li>
                 <li class="menu-item"><a href="#gustos">Mis Gustos</a></li>
@@ -20,53 +20,192 @@
         </nav>
     </header>
     <main>
-        <section id="personalImage">
+        <section id="presentacion">
             <figure>
                 <img src="./images/me.jpeg" alt="Marlon Gualteros">
-                <figcaption>Desarrollador front-end</figcaption>
             </figure>
+            <p>
+                Hola!!, soy Marlon Gualteros Porras, ingeniero egresado de la Universidad de Cundinamarca sede Fusagasugá. Me encanta el desarrollo web y en estos momentos estoy enfocado en el desarrollo Front-End, tengo 27 años, soy soltero y vivo en la ciudad de Bogotá.
+            </p>
         </section>
-        <section  id="habbilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>
-                    <h6>Html 5</h6>
-                    <p>Tengo habilidades solidas en el lenguaje de marcado, manejo de etiquetas, estructura de documentos html </p>
-                </li>
-                <li>
-                    <h6>Css 3</h6>
-                    <p>Utilizar estilos es lo que le da vida a los sitiosweb y una de las formas de hacerlo es mediante CSS acá destaco el manejo de responsive desing con enfoque movil first, así como, animaciones y manejo de media querys</p>
-                </li>
-                <li>
-                    <h6>JavaScript</h6>
-                    <p>El lenguaje diseñado para la web mediante este puedo manejar el DOM, detectar eventos, recuperar información mediante estructuras de datos y hacer peticiones a Apis </p>
-                </li>
-            </ul>
+        <h2 id="h-cards">Mis Habilidades </h2>
+        <section id="cards">
+            <div class="container-card">
+                <div class="front card">
+                        <img src="./images/html.png" alt="">
+
+                </div>
+                <div class="back card">
+                    <h2>HTML</h2>
+                    <p>Maquetación HTML<br>
+                       Manejo de etiquetas<br>
+                       Estructura de documentos HTML<br>
+                    </p>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="front card">
+                        <img src="./images/css.jpg" alt="">
+
+                </div>
+                <div class="back card">
+                    <h2>CSS</h2>
+                    <p>Con CSS, destaco el manejo de responsive desing con enfoque movil first, así como, animaciones y manejo de media querys</p>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="front card">
+                        <img src="./images/github.jpg" alt="">
+                </div>
+                <div class="back card">
+                    <h2>GitHub</h2>
+                    <p>
+                        Manejo de repositorios locales y remotos, Git flow, trabajo colaborativo en repositorios y manejo de ramas. 
+                    </p>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="front card">
+                        <img src="./images/js.jpg" alt="">
+
+                </div>
+                <div class="back card">
+                    <h2>JavaScript</h2>
+                    <p>Maanejo del DOM, control de eventos, recuperar información mediante estructuras de datos y manejo de Apis y JS asíncrono</p>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="front card">
+                        <img src="./images/react.png" alt="">
+
+                </div>
+                <div class="back card">
+                    <h2>REACT</h2>
+                    <p>Diseño reactivo, creación de componentes, manejo de props, hooks, local storage y React Router</p>
+                </div>
+            </div>
         </section>
         <section id="hobbies">
-            <h2 >Mis Hobbies</h2>
-            <ul>
-                <li>Programar</li>
-                <li>Diseño</li>
-                <li>Hacer deporte</li>
+            <h2>Mis Hobbies</h2>
+            <ul class="slide-container">
+                <li>Programar
+                    <input type="checkbox" id="mostrar">
+                    <label for="mostrar" >
+                        <i class="fa-solid fa-angles-down"></i>
+                    </label>
+                    <div class="slide" id="programar">
+                        <div class="content">
+                            <i class="fa-brands fa-java"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+                    </div>
+                </li>
             </ul>
+            <div class="slide-container">
+                <li>Videojuegos
+                    <input type="checkbox" id="mostrar2">
+                    <label for="mostrar2"><i class="fa-solid fa-angles-down"></i></label>
+                    <div class="slide" id="juegos">
+                        <div class="content">
+                            <article>
+                                <picture>
+                                    <img src="./images/pub.jpg" alt="PubgMovile">
+                                </picture>
+                                <p>
+                                    Juegobattle royale para moviles con diferentes modos de juego.
+                                </p>
+                            </article>
+                            <article>
+                                <picture>
+                                    <img src="./images/halo2.jpg" alt="halo2">
+                                </picture>
+                                <p>
+                                    Shooter en primera persona con dos modos de juego campaña y multijugador.
+                                </p>
+                            </article>
+                            <article>
+                                <picture>
+                                    <img src="./images/dbd.jpg" alt="DeadByDaylight">
+                                </picture>
+                                <p>
+                                    Dead by Daylight es un juego de horror en modo multijugador de 1 contra 4 donde una persona asume el papel del asesino y las otras cuatro juegan como sobrevivientes.
+                                </p>
+                            </article>
+                            <article>
+                                <picture>
+                                    <img src="./images/defjam.jpg" alt="DefJam">
+                                </picture>
+                                <p>
+                                    Basado en la lucha callejera. Este juego de lucha también incorpora cantantes y actores famosos como por ejemplo Snoop Dogg, Sean Paul, Ice-T, Xzibit, Danny Trejo. Tiene dos modos de juego historia y multijugador.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="slide-container">
+                <li>Hacer Deporte
+                    <input type="checkbox" id="mostrar3">
+                    <label for="mostrar3"><i class="fa-solid fa-angles-down"></i></label>
+                    <div class="slide" id="deporte">
+                        <ul>
+                            <li>Calistenia</li>
+                            <li>Saltar cuerda</li>
+                            <li>Correr</li>
+                            <li>Pesas</li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
         </section>
         <section id="intereses">
             <h2>Mis Intereses</h2>
             <ol>
-                <li>Aprobar el bootcamp</li>
-                <li>Realizar un proyecto de desarrollo con unos amigos</li>
-                <li>Terminar un curso virtual de Scrum</li>
+                <li>Aprobar el bootcamp ⏳</li>
+                <li>Realizar un proyecto de desarrollo con unos amigos ⏳</li>
+                <li>Terminar un curso virtual de Scrum ✅</li>
             </ol>
         </section>
         <section id="gustos">
             <h2>Mis Gustos</h2>
-            <dl>
-                <dt>Desarrollo front end
-                <dd>El Front end es la parte de una web que conecta e interactúa con los usuarios que la visitan</dd></dt>
-                <dt>Diseño UX
-                <dd>Se habla de diseño UX con el propósito de definir el diseño de la experiencia de usuario. Por design se hace referencia sobre todo a la «concepción» de la experiencia de usuario más que a la creación visual.</dd></dt>
-            </dl>
+                <div>Desarrollo front end 
+                    <input type="checkbox" id="ver">
+                    <label for="ver">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </label>
+                        <p id="p1">
+                            El Front end es la parte de una web que conecta e interactúa con los usuarios que la visitan
+                        </p>
+                </div>
+                <div>Diseño UX 
+                    <input type="checkbox" id="ver2">
+                    <label for="ver2">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </label>
+                    <p id="p2">
+                        Se habla de diseño UX con el propósito de definir el diseño de la experiencia de usuario. Por design se hace referencia sobre todo a la experiencia de usuario más que a la creación visual.
+                    </p>
+                </div>
+                <div>Musica
+                    <input type="checkbox" id="ver3">
+                    <label for="ver3">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </label>
+                    <p id="p3">
+                        Escucho varios géneros musicales entre los cuales están electrónica artistas preferidos: Avicci, David Guetta. Rap artistas preferidos: Eminem, canserbero, rock banda favorita Linkin Park, Guns N' Roses. Metal la banda Disturbed, además, me gusta el vallenato y algunas canciones de Bruno Mars.
+                    </p>
+                </div>
+
+                <div>Viajar
+                    <input type="checkbox" id="ver4">
+                    <label for="ver4">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </label>
+                    <p id="p4">
+                        Conocer el mundo es algo que quiero lograr, sin embargo, primero quiero conocer un poco más mi país, ya he conocido varios lugares, como Villavicencio, Valledupar, Santa Marta, Cartagena, cabo de la Vela, Zipaquirá, Chiquinquirá, Fusagasugá, Hoda, San Bernardo... Entre otros.
+                    </p>
+                </div>
         </section>
     </main>
 </body>
